@@ -1,5 +1,4 @@
 <div  style="text-align:center">
-  
     {{pageTitle}}
     <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
       <span aria-hidden="true">&times;</span>
@@ -7,6 +6,7 @@
   </div>
   <div class="modal-body">
     <input type="text" placeholder="" id="usr">
+    <button type="button" class="success" (click)="createRoom()">create</button>
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>

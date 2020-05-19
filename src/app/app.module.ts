@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HomeComponent} from './homemodule/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { HttpClientModule }    from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     MatDialogModule,
     BrowserAnimationsModule,
-    NgbModule
-
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

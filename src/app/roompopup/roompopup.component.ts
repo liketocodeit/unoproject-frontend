@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { UnoService } from '../services/uno-service.service';
 
 
 @Component({
@@ -8,7 +9,15 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
     
   })
   export class DialogResultExampleDialog {
+    
     pageTitle:string='Create Room';
-    constructor(public activeModal: NgbActiveModal) {
+    
+    constructor(public activeModal: NgbActiveModal,
+                private unoService: UnoService) {
+    }
+
+    createRoom() {
+      this.unoService.createGame();
+      this.activeModal.dismiss();
     }
   }  
