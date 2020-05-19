@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DialogResultExampleDialog } from '../roompopup/roompopup.component';
+import {JoinroomComponent} from '../joinroom/joinroom.component';
 
 @Component({
  selector:'uno-home',
@@ -17,6 +18,11 @@ export class HomeComponent{
       openDialog() {
             const modalRef = this.modalService.open(DialogResultExampleDialog);
             modalRef.componentInstance.name = 'World'; 
+      }
+
+      joinRoomDialog(){
+            const modalRef = this.modalService.open(JoinroomComponent);
+            modalRef.componentInstance.name = 'Hello'; 
       }
 }
 
