@@ -10,11 +10,15 @@ import { AppComponent } from './app.component';
 import {HomeComponent} from './homemodule/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule }    from '@angular/common/http';
+import { GameComponentComponent } from './game-component/game-component.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    GameComponentComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

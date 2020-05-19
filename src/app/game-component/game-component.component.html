@@ -1,0 +1,3 @@
+<div (click)="putCard(card)" *ngFor="let card of cards">
+    <app-card style="float: left;" [number]="card.number" [color]="card.color" [type]="card.type"></app-card>
+</div>
