@@ -1,8 +1,15 @@
-<div  style="text-align:center">
+<button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+  <span aria-hidden="true">&times;</span>
+</button>
+<div  style="text-align:center" class="header">
+  
     {{pageTitle}}
-    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
+
+</div>
+
+  <p></p>
+  <div class="text-center">
+    <input type="text" class="text-center" placeholder="enter username"  id="usr">
   </div>
   <div class="modal-body">
     <div class="container">
@@ -19,6 +26,4 @@
     <button type="button" class="success" (click)="createRoom()">create</button>
 
   </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
-  </div>
+  <p></p>
