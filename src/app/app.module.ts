@@ -13,6 +13,7 @@ import { HttpClientModule }    from '@angular/common/http';
 import { GameComponentComponent } from './game-component/game-component.component';
 import { CardComponent } from './card/card.component';
 import { JoinroomComponent } from './joinroom/joinroom.component';
+import { CreateRoomComponent } from './roompopup/roompopup.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { JoinroomComponent } from './joinroom/joinroom.component';
     HomeComponent,
     GameComponentComponent,
     CardComponent,
-    JoinroomComponent
+    JoinroomComponent,
+    CreateRoomComponent
   ],
   imports: [
     BrowserModule,

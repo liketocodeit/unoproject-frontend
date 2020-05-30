@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { DialogResultExampleDialog } from '../roompopup/roompopup.component';
+import { CreateRoomComponent } from '../roompopup/roompopup.component';
 import {JoinroomComponent} from '../joinroom/joinroom.component';
 
 @Component({
@@ -16,7 +16,7 @@ export class HomeComponent{
       constructor(private modalService: NgbModal) {}
 
       openDialog() {
-            const modalRef = this.modalService.open(DialogResultExampleDialog);
+            const modalRef = this.modalService.open(CreateRoomComponent);
             modalRef.componentInstance.name = 'World'; 
       }
 

@@ -8,7 +8,7 @@ import { UnoService } from '../services/uno-service.service';
     templateUrl: './roompopup.component.html',
     
   })
-  export class DialogResultExampleDialog {
+  export class CreateRoomComponent {
     
     pageTitle:string='Create Room';
 
