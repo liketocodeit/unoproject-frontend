@@ -17,10 +17,10 @@ export class UnoService {
     });
   }
 
-  createGame() {
+  createGame(payload) {
     let headers = new HttpHeaders();
     headers.set('Content-Type', 'application/json; charset=utf-8');
-    this.httpClient.post('http://2122fc65.ngrok.io/create/game', null, { headers: headers }).subscribe(response => {
+    this.httpClient.post('http://2122fc65.ngrok.io/create/game', payload, { headers: headers }).subscribe(response => {
       console.log(response);
     });
   }

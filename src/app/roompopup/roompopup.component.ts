@@ -11,13 +11,20 @@ import { UnoService } from '../services/uno-service.service';
   export class DialogResultExampleDialog {
     
     pageTitle:string='Create Room';
+
+    gameName: String;
+    playerName: String;
     
     constructor(public activeModal: NgbActiveModal,
                 private unoService: UnoService) {
     }
 
     createRoom() {
-      this.unoService.createGame();
+      let payload = {
+        "playerName": this.playerName,
+        "gameName": this.gameName
+      }
+      this.unoService.createGame(payload);
       this.activeModal.dismiss();
     }
   }  

@@ -5,8 +5,19 @@
     </button>
   </div>
   <div class="modal-body">
-    <input type="text" placeholder="" id="usr">
+    <div class="container">
+      <div class="row">
+        <input type="text" [(ngModel)]="playerName" placeholder="Enter player name here .." id="usr">
+      </div>
+      <br>
+      <div class="row">
+        <input type="text" [(ngModel)]="gameName" placeholder="Enter room name here .." id="usr">
+      </div>
+      <br>
+    </div>
+  
     <button type="button" class="success" (click)="createRoom()">create</button>
+
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
