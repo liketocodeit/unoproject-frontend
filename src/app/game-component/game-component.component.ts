@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './game-component.component.html',
   styleUrls: ['./game-component.component.scss']
 })
-export class GameComponentComponent implements OnInit {
+export class GameComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log('loaded game component !!');
   }
 
   cards = [

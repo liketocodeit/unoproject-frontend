@@ -20,13 +20,13 @@ export class UnoService {
   createGame(payload) {
     let headers = new HttpHeaders();
     headers.set('Content-Type', 'application/json; charset=utf-8');
-    this.httpClient.post('http://2122fc65.ngrok.io/create/game', payload, { headers: headers }).subscribe(response => {
+    this.httpClient.post('http://43119d8a73cf.ngrok.io/create/game', payload, { headers: headers }).subscribe(response => {
       console.log(response);
     });
   }
 
   getGame() {
-    this.httpClient.get('http://2122fc65.ngrok.io/get/game').subscribe((data: Game) => {
+    this.httpClient.get('http://43119d8a73cf.ngrok.io/get/game').subscribe((data: Game) => {
       this.gameObservable.next(data);
     });
   }
